@@ -102,10 +102,7 @@
                 <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="/about">About</a>
             </li>
         </ul>
     </div>
@@ -123,9 +120,9 @@
             @foreach($conversation as $message)
                 <p>
                     @if($message['type'] === 'user')
-                        You: {{ $message['text'] }}
+                        <img src="img_1/img.png" alt="pepe Image" class="round-image">You: {{ $message['text'] }}
                     @else
-                        Freddy: {{ $message['text'] }}
+                        <img src="img/img.png" alt="Frog Image" class="round-image">Freddy: {{ $message['text'] }}
                     @endif
                 </p>
             @endforeach

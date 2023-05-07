@@ -8,6 +8,9 @@ Route::get('/', function (Request $request) {
     return view('form');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
 
 Route::post('/generate', function (Request $request) {
     try {
