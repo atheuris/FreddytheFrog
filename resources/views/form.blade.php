@@ -87,6 +87,12 @@
             border-radius: 50%;
             margin-right: 15px;
         }
+        .round-image-user {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
     </style>
 </head>
 <body>
@@ -120,9 +126,9 @@
             @foreach($conversation as $message)
                 <p>
                     @if($message['type'] === 'user')
-                        <img src="img_1/img.png" alt="pepe Image" class="round-image">You: {{ $message['text'] }}
+                        <img src="img/pepe.png" alt="pepe Image" class="round-image-user">You: {{ $message['text'] }}
                     @else
-                        <img src="img/img.png" alt="Frog Image" class="round-image">Freddy: {{ $message['text'] }}
+                        <img src="img/img.png" alt="Frog Image" class="round-image-user">Freddy: {{ $message['text'] }}
                     @endif
                 </p>
             @endforeach
