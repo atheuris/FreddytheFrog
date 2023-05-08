@@ -1,119 +1,11 @@
 <!-- resources/views/about.blade.php -->
-
 <!DOCTYPE html>
 <html>
 <head>
-
     <title>About Freddy the Frog</title>
     <!-- Add Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ceface;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .rounded-image-placeholder {
-            display: block;
-            width: 100%;
-            max-width: 300px;
-            height: 300px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            background-color: #FFFFFF;
-            object-fit: cover;
-        }
-
-        .container {
-            background-color: #71d077;
-            border-radius: 25px;
-            padding: 30px;
-            max-width: 800px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            margin: 0 auto;
-        }
-        .text-white-hover {
-            color: #FFFFFF; /* White text color */
-        }
-
-        .text-white-hover:hover {
-            color: #FFD700; /* Gold hover color */
-        }
-
-        .conversation {
-            background-color: #ffd3b6;
-            border-radius: 25px;
-            padding: 20px;
-            margin-top: 20px;
-            overflow-y: auto; /* Allow vertical scrolling */
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            max-height: calc(100vh - 250px); /* Limit the height */
-        }
-
-        .input-container {
-            margin-top: auto;
-        }
-
-        .frog-navbar {
-            background-color: #4CAF50; /* Green frog color */
-            text-align: center;
-        }
-
-        .nav-link {
-            color: #FFFFFF; /* White text color */
-        }
-
-        .nav-link:hover {
-            color: #FFD700; /* Gold hover color */
-        }
-
-        .navbar-brand {
-            color: #FFFFFF; /* White text color */
-            font-weight: bold;
-        }
-
-        .navbar-brand:hover {
-            color: #FFD700; /* Gold hover color */
-        }
-
-        .frog-footer {
-            background-color: #4CAF50;
-            padding: 10px 0;
-            color: #FFFFFF;
-            text-align: center;
-            font-weight: bold;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .round-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-
-        .tab-content {
-            margin-top: 30px;
-        }
-
-        .crypto-info {
-            margin-top: 20px;
-        }
-    </style>
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-sm frog-navbar">
@@ -122,12 +14,20 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/about">About</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link custom-button" href="#">Buy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link custom-button" href="#">Chart</a>
             </li>
         </ul>
     </div>
@@ -205,5 +105,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
