@@ -82,7 +82,7 @@
         <div id="liquidity" class="container tab-pane fade text-white-hover">
             <h3>Initial Liquidity</h3>
             <p class="text-white-hover">
-                FREDDY started with an initial liquidity of 0.5 ETH, providing a solid foundation for the token's growth and stability in the market
+                FREDDY started with an initial liquidity of 0.5 ETH and 95 billion $FREDDY tokens. 95% of the circulation has been placed in the liquidity pool, for 5% left for CEX listings.
             </p>
         </div>
         <div id="meme-value" class="container tab-pane fade text-white-hover">
