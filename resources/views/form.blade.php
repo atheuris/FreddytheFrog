@@ -1,11 +1,10 @@
-<!-- resources/views/form.blade.php -->
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Chat with Freddy</title>
     <!-- Add Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Add viewport for mobile devices -->
     <style>
         body {
             background-color: #ceface;
@@ -79,6 +78,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap; /* Add wrap for mobile devices */
         }
 
         .round-image {
@@ -92,6 +92,14 @@
             height: 40px;
             border-radius: 50%;
             margin-right: 15px;
+        }
+
+        /* Add media query for smaller devices */
+        @media (max-width: 576px) {
+            .header-container h1 {
+                font-size: 24px;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -112,12 +120,13 @@
             </li>
         </ul>
     </div>
-</nav>
 
+</nav>
 <div class="container d-flex flex-column overflow-scroll">
     <div class="header-container">
         <img src="img/img.png" alt="Frog Image" class="round-image">
-
+        python
+        Copy code
         <h1 class="text-center navbar-brand nav-link">Chat with Freddy the Frog!</h1>
     </div>
 
@@ -140,20 +149,16 @@
         <div class="form-group">
             <label for="prompt">Say something to Freddy:</label>
             <input type="text" name="prompt" id="prompt" class="form-control" maxlength="140">
-
         </div>
         <button type="submit" class="btn btn-primary">Send</button>
     </form>
 </div>
-
 <div class="frog-footer">
     <p>&copy; {{ date('Y') }} Froggy Chat. All rights reserved.</p>
 </div>
-
 <!-- Add Bootstrap JS and its dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
