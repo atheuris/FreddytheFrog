@@ -25,10 +25,10 @@
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link custom-button" href="#">Buy</a>
+                <a class="nav-link custom-button" href="https://app.uniswap.org/#/swap?outputCurrency=0x373e6f4eb87b68d79ab24ce8efc9c1dee0baea56">Buy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link custom-button" href="#">Chart</a>
+                <a class="nav-link custom-button" href="https://dexscreener.com/ethereum/0x92e146bb711d7c7bff42b8d139a44fd669e64d7f">Chart</a>
             </li>
         </ul>
     </div>
