@@ -11,27 +11,18 @@
 
 <nav class="navbar navbar-expand-sm frog-navbar">
     <a class="navbar-brand" href="#">Froggy</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link custom-button" href="https://app.uniswap.org/#/swap?outputCurrency=0x373e6f4eb87b68d79ab24ce8efc9c1dee0baea56">Buy</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link custom-button" href="https://dexscreener.com/ethereum/0x92e146bb711d7c7bff42b8d139a44fd669e64d7f">Chart</a>
-            </li>
-        </ul>
+    <div class="navbar-nav mr-auto">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about">About</a>
     </div>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link custom-button" href="https://app.uniswap.org/#/swap?outputCurrency=0x373e6f4eb87b68d79ab24ce8efc9c1dee0baea56">Buy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link custom-button" href="https://dexscreener.com/ethereum/0x92e146bb711d7c7bff42b8d139a44fd669e64d7f">Chart</a>
+        </li>
+    </ul>
 </nav>
 <div class="container d-flex flex-column overflow-scroll">
     <div class="header-container">
